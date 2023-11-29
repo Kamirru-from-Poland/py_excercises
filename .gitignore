@@ -1,2 +1,3 @@
 /.idea
 !/chapter1/main.py/
+*.pyc
