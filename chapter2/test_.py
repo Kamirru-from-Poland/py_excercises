@@ -9,3 +9,10 @@ class TestPrintVarFunction:
 
     def test_print_var_incorrect(self):
         assert print_var(3) != 4
+
+
+class TestPrintText:
+    @pytest.mark.parametrize("text,n,expected", [("coleslaw",1, "coleslaw"),("meow",2, "meowmeow"),("hi",5, "hihihihihi")])
+    def test_print_text_x_times(self, text,n, expected):
+        assert print_text_x_times(text, n) == expected
+
